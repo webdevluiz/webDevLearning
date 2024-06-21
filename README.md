@@ -5,7 +5,7 @@ My personal essay on front-end learning journey through HTML, CSS, javascrypt an
 
 # HTML - HyperText Markup Language
 
-|Linguagem de marcação utilizada para estruturar e definir o conteúdo de páginas web, baseada em **elementos/tags** que possuem funções especificas e **atributos** com **valores** personalizáveis que alteram sua aparência e comportamento.
+|Linguagem de marcação utilizada para estruturar e definir o conteúdo de páginas web, baseada em **elementos/tags** que possuem funções especificas e **atributos** com **valores** personalizáveis que alteram sua aparência e comportamento. Estruturação baseada em aninhamento de elementos, os quais os descendentes herdam as características do ninho caso não tenham regras próprias.
 
 # Estrutura básica de um arquivo HTML <!>
 
@@ -27,28 +27,42 @@ My personal essay on front-end learning journey through HTML, CSS, javascrypt an
 
 `<!--comentário a ser lido mas não interpretado pela máquina-->`
 
-# Tags - utilizadas pelos mecanismos de busca para avaliar a relevância do conteúdo entregue
+# Tags
+- marcadores utilizados para demonstrar o que aquele conteúdo representa, utilizado pelos algoritmos de busca para verificar a relevância do site em questão.
 
 ```
-<h1>
-    Titulos, numeração mostra a hierarquia.
-</h1>
+<header> - Cabeçalho do conteúdo
+    <h1> - Titulos, Numeração mostra a hierarquia</h1>
+</header>
 
-<p>
-    Paragrafo.
-</p>
+<main> - Área do conteúdo principal
+    <p> - Paragrafo.
+        <a href="https://url.desejado ou nome_arquivo"> - Ancora o link entregue</a>
+    </p>
 
-<a href="https://url.desejado ou nome_arquivo">
-    Ancora o link entregue.
-</a>
+    <nav> -     
+        <link href="nome_arquivo ou https://url.do.site" rel="a relação do link">
+    </nav>
 
-<link href="nome_arquivo ou https://url.do.site" rel="a relação do link">
+    <div> - Sessão para divisão
+        <img src="nome_fonte.formato ou https://url.da.imagem" alt="Descrição da imagem.">
+    </div>
+    
+    <article> - Estruturador de textos
+        <ol> - Lista ordenada
+            <li> - Rlemento da lista </li>
+        </ol>
 
-<img src="nome_fonte.formato ou https://url.da.imagem" alt="Descrição da imagem em caso de falha e para verificação dos algoritmos de busca">
-
+        <ul> - Lista desordenada
+            <li> - Mesma tag </li>
+            <li> - Mudança de estilos no CSS </li>
+        </ul>
+    </article>
+</main>
+<footer>
+    <p>Rodapé da página</p>
+</footer>
 ```
-
-
 
 
 # CSS - Cascading Style Sheets
@@ -95,13 +109,11 @@ My personal essay on front-end learning journey through HTML, CSS, javascrypt an
             text-decoration: underline;
         }
     </style>
-</head>
-or
-<head>
-    <link href="style.css" rel="stylesheet"> - criar o arquivo .css e seu conteúdo e enviar junto ao arquivo .html>
+        or
+    <link href="style.css" rel="stylesheet">
 </head>
 ```
-- Cada linha dentro dos colchetes terá uma propriedade CSS e um valor, devendo terminar em ;
+- Cada linha dentro dos colchetes terá uma propriedade CSS e um valor, devendo terminar com ;
 
 # Comentários em um arquivo CSS
 
@@ -118,35 +130,91 @@ Sendo assim, ao especificar `a:hover {texte-decoration: underline;}`, apenas o e
 A declaração de qual folha estilizará o elementos segue a ideia de especificidade, portanto, estilos inline são seguidos de estilos no body, com estilos externos tendo menos prioridade. Também vale salientar que a regra declarada por ultimo dentro de cada estilo prevalece.
 
 # Seletores em CSS
-| ID :
+| **Type**: Folha de estilo para elementos de um tipo ou grupos de tipos
 ```
 <head>
     <style>
-    #nome{
-        ;
-    }
-    or
-    p#nome{
-        ;
-    }
+        p {;}
+        h1 {;}
+            or
+        p, h1 {;}
     </style>
 </head>
 <body>
-    <p id="nome">
-        Estilo entregue apenas a esse elemento.
-        </p>
+    <h1>Titulo</h1>
+    <p>Paragrafo</p>
+</body>
+```
+| **ID** : Especifíca qual elemento recebe aquele estilo
+```
+<head>
+    <style>
+        #nome{;}
+            or
+        p#nome{;}
+    </style>
+</head>
+<body>
+    <p id="nome">Paragrafo de id nome.</p>
 </body>
 ``` 
 - `#nome` ou `p#nome` Identifica especificamente o ID dado: regra seguida apenas por esse elemento, não nomeie diversos elementos com o mesmo ID.
 
+| **Class** : Afeta quaisquer elementos que pertençam aquela classe.
+```
+<head>
+    <style>
+        .class{;}
+    </style>
+</head>
+<body>
+    <h1 ="class">Titulo da classe
+    <p ="class">Paragrafo da classe</p>
+</body>
+``` 
+
+# Combinações em CSS
+| **Descendencia** :Qualquer elemento que, de alguma maneira, direta ou indireta, pertença aquela regra
+>```
+><style>
+>    article p a {;}
+></style>
+>```
+> Qualquer âncora aninha em uma lista que esteja em um article receberá esse estílo
+
+
+| **Child** :Apenas elementos que obedecem a ordem direta de aninhamento receberão
+>```
+><style>
+>    article > a {;}
+></style>
+>```
+> Apenas uma âncora que esteja aninhada diretamente em um artigo receberá esse estilo, no caso abaixo, apenas a âncora dentro do article 2.
+>```
+><body>
+>   <main>
+>       <article id="1">
+>           <p><a href=""></p>
+>       </article>
+>
+>       <div></div>
+>
+>       <article id="2">
+>           <a href="">
+>       </article>
+>   </main>
+></body>
+>```
+
 # Propriedades comuns em CSS
 
-```<head>
+```
+<head>
     <style>
         h1, p {
             background-color: Define a cor de fundo;
             background-image: Define uma imagem de fundo;
-            border: Define as propriedades da borda - ;
+            border: Define as propriedades da borda;
             border-radius: Define os cantos arredondados - px;
             box-shadow: Adiciona sombra ao elemento;
             color: Define a cor do texto;
@@ -160,9 +228,9 @@ A declaração de qual folha estilizará o elementos segue a ideia de especifici
             opacity: Define a opacidade do elemento;
             padding: Define o espaçamento interno do elemento;
             text-align: Define o alinhamento do texto;
-            text-decoration: Adiciona decoração ao texto (sublinhado, linha sobre o texto, etc.);
+            text-decoration: Adiciona decoração (sublinhado, linha sobre o texto, etc.);
             text-shadow: Adiciona sombra ao texto;
-            text-transform: Controla a capitalização do texto, lowercase, uppercase, capitalize;
+            text-transform: Controla o capslock do texto (lowercase, uppercase, capitalize);
             transform: Aplica transformações 2D ou 3D;
             word-spacing: Define o espaçamento entre as palavras;
         }
@@ -180,6 +248,22 @@ A declaração de qual folha estilizará o elementos segue a ideia de especifici
             opacity: Define a opacidade da imagem;
             filter: Aplica efeitos gráficos como blur, brightness, contrast, etc;
         }
+        ol, ul, li {
+            list-style: Modifica o marcador de elementos da lista;
+        }
+        
     </style>
 </head>
 ```
+
+# Box model no CSS 
+> box model pode ser visualizado nas guia de desenvolvedor do google Chrome.
+
+![explicação visual no arquivo cssBoxModel.jpg](boxModel.png)
+
+* Cada elemento possui as características de uma caixa, sendo:
+    * **margin** (Espaço exterior a caixa). - a margem pode ajudar a centralizar elementos.
+    * **border** (Linha que representa as paredes da caixa).
+    * **padding** (Espaço entre o conteúdo e as paredes da caixa).
+    * **content** (O conteúdo mostrado na caixa).
+    * **element** (A junção do conteúdo da caixa, de seu espaço interno e as paredes da caixa). 
