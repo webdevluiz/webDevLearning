@@ -44,9 +44,11 @@ My personal essay on front-end learning journey through HTML, CSS, javascrypt an
         <link href="nome_arquivo ou https://url.do.site" rel="a relação do link">
     </nav>
 
-    <div> - Sessão para divisão
+    <section> - Sessão para divisão
         <img src="nome_fonte.formato ou https://url.da.imagem" alt="Descrição da imagem.">
-    </div>
+    </section>
+
+
     
     <article> - Estruturador de textos
         <ol> - Lista ordenada
@@ -259,7 +261,7 @@ A declaração de qual folha estilizará o elementos segue a ideia de especifici
 # Box model no CSS 
 > box model pode ser visualizado nas guia de desenvolvedor do google Chrome.
 
-![explicação visual no arquivo cssBoxModel.jpg](boxModel.png)
+![explicação visual no arquivo cssBoxModel.jpg](imgs/boxModel.png)
 
 * Cada elemento possui as características de uma caixa, sendo:
     * **margin** (Espaço exterior a caixa). - a margem pode ajudar a centralizar elementos.

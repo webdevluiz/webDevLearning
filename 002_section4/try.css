@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* configs gerais */
+    * {
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body {
+        background-color: rgb(1, 22, 39);
+    }
+    header {
+        width: 400px;
+        padding: 10px 0px 30px 0px;
+        margin-bottom: 50px;
+    }
+    h2 {
+        text-decoration: underline;
+    }
+    header h1, header h2 {
+        color: rgb(119, 56, 103);
+    }
+    header h1 {
+        font-size: 800;
+        font-weight: 800;
+        margin: 10px 0 -12px 0;
+    }    
+        
+    header h2 {
+        font-size: 400;
+        font-weight: 400;
+        margin: 0 0 60px 0;
+    }
+    header img {
+        border-radius: 25%;
+        box-shadow: 0 0 4px yellow;
+        width: 280px;
+    }
+    main {
+        background-color: rgb(119, 56, 103);
+        box-shadow: 0px 0px 4px white;
+        
+        width: 800px;
+        padding: 12px;
+        border-radius: 15px;
+    }
+    article{
+        margin: 5px auto 5px 0px;
+        padding: 0px;
+    }
+    article h2, article p , li {
+        text-align: start; /*Garante que os textos iniciem na borda da main */
+        margin: 6px 4px;
+        color: rgb(1, 22, 39);
+    }
+    ul {
+        list-style: none;
+    }
+    li{
+        padding-left: 16px;
+        margin: 6px 0;
+        border-left: 4px solid yellow;
+    }
+    .curios {
+        border-left: 5px solid transparent;
+    }
+    a {
+        background-color: rgb(232, 166, 20);
+        border-radius: 4px;
+        padding: 2px;
+        color: black;
+    }
+    a:hover {
+        background-color: black;
+        color: rgb(232, 166, 20);
+    }
+    footer p {
+        color: rgb(232, 166, 20);
+        margin: 20px;
+    }
+    #ass {
+        font-size: x-small;
+    }

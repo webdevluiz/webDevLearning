@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+
+/*Configurações comuns às 3 páginas*/
+    * {
+        text-align: center;
+        padding: 0px;
+        margin: 0px auto;
+    }
+    body {
+        background-color: rgb(255, 156, 145);
+    }
+    main {
+        width: 350px;
+        height: 610px;
+        margin: 10px auto;
+        padding: 10px 20px;
+        
+        background-color: rgb(255, 145, 0);
+        border: 2px solid white;
+        border-radius: 12px;
+        box-shadow: 0px 0px 40px rgb(95, 95, 95);
+    }
+    a {
+        text-decoration: none;
+        color: rgb(255, 156, 145);
+        background-color: black;
+
+        padding: 8px;
+        border-radius: 12px;
+        border: 2px solid white;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: black;
+        background-color: rgb(255, 156, 145);
+
+        font-size: 24px;
+        font-weight: 1000;
+        border: 2px solid black;
+    }
+/* Configurações focadas na página index */
+    header {
+        width: 500px;
+        margin: 0px auto 60px auto;
+        padding: 15px 0px 0px 0px;
+        
+        border: 1px solid black;
+        border-radius: 0px 0px 12px 12px;
+        background-color: rgb(255, 81, 0);
+    }
+    header > h1 {
+        margin: 0px 0px -9px 0px;
+    }
+    ol {
+        list-style: none;
+    }
+    li {
+        margin: 20px 0px 60px 0px; 
+    }
+    h2{
+        margin: -33px auto 33px auto;
+
+    }
+    div {
+        margin: 20px auto;
+    }
+    li > div > h3{
+        margin: -6px auto;
+        padding: 14px 0px 0px 0px;
+    }
+    li > div > p {
+        background-color: aquamarine;
+
+        width: 190px;
+        height: 30px;
+        padding: 15px 10px 0px 10px;
+        border-radius: 12px;
+        border: 1px solid black;
+    }
+    #escolhas > h3 {
+        margin: 0px 0px 30px 0px;
+    }
+/* Configurações feitas para a página sucess */
+
+    #desenho > img {
+        border-radius: 0 0 35% 35%;
+    }
+    main > div > h2 {
+        width: 100px;
+        margin: 20px auto 50px;
+    }
+    
