@@ -261,11 +261,47 @@ A declaração de qual folha estilizará o elementos segue a ideia de especifici
 # Box model no CSS 
 > box model pode ser visualizado nas guia de desenvolvedor do google Chrome.
 
-![explicação visual no arquivo cssBoxModel.jpg](imgs/boxModel.png)
-
+![explicação visual no arquivo cssBoxModel.jpg](/imgs/models/boxModel.png)
 * Cada elemento possui as características de uma caixa, sendo:
     * **margin** (Espaço exterior a caixa). - a margem pode ajudar a centralizar elementos.
     * **border** (Linha que representa as paredes da caixa).
     * **padding** (Espaço entre o conteúdo e as paredes da caixa).
     * **content** (O conteúdo mostrado na caixa).
-    * **element** (A junção do conteúdo da caixa, de seu espaço interno e as paredes da caixa). 
+    * **element** (A junção do conteúdo da caixa, de seu espaço interno e as paredes da caixa).
+
+# Flexbox model no CSS
+> consiste em tratar um elemento como container e manejar a posição de suas crianças dentro do mesmo.
+
+![Explicação visual de características de um elementos flexbox https://medium.com/@MakeComputerScienceGreatAgain/understanding-flexbox-a-comprehensive-guide-992bcd5f04de](/imgs/models/flexBoxMenor.png)
+```
+#container {
+
+    display: flex; - modifica a regra de alinhamento de elementos dentro do container
+    flex-direction: row; - padrão, sentido esquerda para direita e cima para baixo;
+    flex-direction: row-reverse; - inverte a ordem dos elementos em linha - direita para esquerda e cima para baixo;
+    flex-direction: column; - mostra os elementos em coluna - cima para baixo e esquerda para direita; 
+    flex-direction: column-reverse; - inverte a ordem dos elementos em coluna = baixo para cima e esquerda para direita
+
+    flex-wrap: nowrap; - padrão
+    flex-wrap: wrap; /* - define se o container ira ou não se comprimir o conteúdo com a alteração de tamanho, definir tamanho inabilita essa opção*/
+
+    justify-content: space-around; /* Desabilite o tamanho do container para ver a diferença */
+    justify-content: space-between;/* Compara o tamanho do container e dos elementos e insere espaços no local especificado */
+
+    align-items: center; define o alinhamento dos itens;
+}
+```
+
+# Position em CSS
+> define como o elemento se comportará em relação a página ou ao seus ancestrais
+```
+style {
+    div{
+        position: relative; - tornará esse elemento um referencial para seus decententes se posicionarem.
+        
+        position: absolute; - configura sua posição ao elemento com a propriedade relative mais recente a qual ele é descendente, para de fazer parte do fluxo de posicionamento desse container.
+
+        position: fized - se torna fixo a posição configurada no container.
+    }
+}
+```

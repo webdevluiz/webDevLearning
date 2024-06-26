@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+div {
+    background-color: #c7c7c7;
+    padding: 20px;
+    text-align: center;
+}
+p {
+    color: #000;
+    padding: 50px;
+    margin: 0;
+}
+#container {
+    background-color: #521751;
+}
+#container p {
+    color: white;
+}
+#one {
+    background-color: #943092;
+    /* position: relative; */
+    /* top: 118px; */
+    /* right: 20px; */
+}
+#two {
+    background-color: palevioletred;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    /* width: 272px; */
+    /* margin-left: auto; */
+}
+#three {
+    background-color: pink;
+    /* position: relative; */
+    /* bottom: 118px; */
+    /* width: 100px; */
+    /* margin: auto; */
+}

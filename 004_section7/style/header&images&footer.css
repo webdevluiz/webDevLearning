@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Regras padrões de formatação comuns as páginas do projeto */
+* {
+    /* text-align: center; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configurações para manter o menu absoluto a página e utilizando toda sua medida */
+#container {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Configs do modelo flexbox para o header*/
+#container, #container > nav > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Configurações do link principal da logo */
+#logo a {
+    color: rgb(245, 243, 160);
+    font-size: 50px;
+    box-shadow: 0 0;
+    margin: 0 0 0 32px;
+}
+
+/* Controle padrão para aparência dos links */
+header a {
+    color: rgb(255, 115, 0);
+    text-shadow: 0 0 8px black;
+    box-shadow: 0 0 2px darkgray;
+
+    margin: 0;
+    padding: 5px;
+    border-radius: 16px;
+    
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header a:hover {
+    color: white;
+    background-color: rgb(255, 115, 0);
+}
+
+/* Configurações da lista */
+ul {
+    list-style: none;
+}
+
+ul a {
+    margin: 0 5px 0 0;
+    font-weight: 700;
+}
+
+/*Controle padrão de tamanho das imagens*/
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px 0 0 12px;
+}
+
+footer, footer ul {
+    background-color: black;
+    /* text-align: center; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+#ass {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+
+    padding: 20px 0;
+    margin: 0 15px;
+}
+
+footer img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+
+    padding: 0;
+    margin: 0 6px;
+}

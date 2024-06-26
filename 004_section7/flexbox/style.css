@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(61, 0, 66);
+    padding: 10px;
+    /* width: 900px; */
+
+    display: flex;
+    /* flex-direction: row; - padrão */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap: nowrap; - padrão */
+    flex-wrap: wrap; /* - define se o container ira ou não se comprimir o conteúdo com a alteração de tamanho, definir tamanho inabilita essa opção*/
+
+    align-items: center; /**/
+    justify-content: space-around; /* Desabilite o tamanho do container para ver a diferença */
+    justify-content: space-between;/* Compara o tamanho do container e dos elementos e insere espaços no local especificado */
+}
+h1, ul {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+div {
+    background-color: blueviolet;
+}
+h1 {
+    background-color: pink;
+    font-size: 16px;
+}
+nav {
+    background-color: orangered;
+}
+ul {
+    background-color: rgb(255, 145, 0);
+    list-style: none;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+li {
+    background-color: yellow;
+    font-weight: 600;
+    /* width: 150px; */
+    margin: 0 12px 0 12px;
+}
