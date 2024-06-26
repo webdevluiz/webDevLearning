@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+main ul {
+  /* width: 700px; */
+  margin: 0px auto;
+  padding: 200px 0 0 0;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* overflow: hidden; */
+
+  padding-top: 150px;
+  background: linear-gradient(
+    135deg,
+    rgb(41, 0, 34),
+    rgb(2, 89, 114),
+    rgb(0, 22, 19),
+    rgb(197, 230, 217),
+    rgb(116, 88, 88),
+    rgb(52, 57, 58),
+    rgb(44, 49, 49)
+  );
+}
+
+main li {
+  height: 200px;
+  margin: 10px 5px;
+
+  border: 2px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+main li:nth-of-type(3n) {
+  grid-column: 1 / 3;
+}
+main li div {
+    padding: 4px 6px 10px 20px;
+}
+main li div a {
+    text-align: end;
+}

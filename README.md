@@ -305,3 +305,41 @@ style {
     }
 }
 ```
+
+# Grid em CSS
+> O CSS Grid Layout é um sistema de layout bidimensional que permite criar designs complexos de forma mais simples e intuitiva. Ele oferece um controle preciso sobre a posição dos elementos dentro de um contêiner de grid. Aqui estão os conceitos e propriedades principais para entender o CSS Grid:
+
+**Conceitos Básicos :**
+* **Grid Container**: O elemento que tem display: grid aplicado a ele. Este contêiner define um contexto de grid para seus elementos filhos.
+
+* **Grid Items:** Os filhos diretos do contêiner de grid. Cada item dentro do grid é um grid item.
+
+* **Grid Lines:** As linhas que dividem o grid em células. As linhas podem ser horizontais ou verticais.
+
+* **Grid Tracks:** As faixas ou trilhos que compõem o grid, que são as linhas horizontais (linhas) e verticais (colunas).
+
+* **Grid Cells:** As células individuais do grid, onde cada célula é o espaço entre duas linhas horizontais e duas verticais.
+
+* **Grid Areas:** Áreas retangulares no grid que podem abranger várias células e serem nomeadas para facilitar a organização.
+
+**Propriedades do Contêiner de Grid :**
+* **Display:** grid: Define um contêiner como um grid.
+
+* **grid-template-columns:** Define a largura das colunas do grid.
+
+* **grid-template-rows:** Define a altura das linhas do grid.
+
+* **grid-template-areas:** Define áreas nomeadas no grid que podem ser referenciadas pelos grid items.
+
+* **gap:** Define o espaçamento entre as linhas e colunas do grid. Pode ser especificado como row-gap e column-gap para espaçamentos individuais.
+
+* **justify-items:** Alinha os itens ao longo do eixo horizontal.
+
+* **align-items:** Alinha os itens ao longo do eixo vertical.
+
+* **Propriedades dos Grid Items**
+* **grid-column:** Define a posição e o tamanho da coluna para o item. Pode ser especificado como * * grid-column-start e grid-column-end.
+
+* **grid-row:** Define a posição e o tamanho da linha para o item. Pode ser especificado como grid-row-start e grid-row-end.
+
+* **grid-area:** Permite que o item ocupe uma área nomeada definida pelo grid-template-areas.

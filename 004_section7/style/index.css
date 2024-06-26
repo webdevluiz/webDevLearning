@@ -97,6 +97,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
 
+    overflow: hidden;/* corta as bordas da imagem sem ter que mecher nelas */
+
     border-radius: 12px;
     box-shadow: 0 0 10px black;
 }
