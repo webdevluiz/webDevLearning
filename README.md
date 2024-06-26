@@ -271,6 +271,8 @@ A declaração de qual folha estilizará o elementos segue a ideia de especifici
 
 # Flexbox model no CSS
 > consiste em tratar um elemento como container e manejar a posição de suas crianças dentro do mesmo.
+>
+>https://www.youtube.com/watch?v=siKKg8Y_tQY
 
 ![Explicação visual de características de um elementos flexbox https://medium.com/@MakeComputerScienceGreatAgain/understanding-flexbox-a-comprehensive-guide-992bcd5f04de](/imgs/models/flexBoxMenor.png)
 ```
@@ -293,21 +295,33 @@ A declaração de qual folha estilizará o elementos segue a ideia de especifici
 ```
 
 # Position em CSS
-> define como o elemento se comportará em relação a página ou ao seus ancestrais
+> define como o elemento se comportará em relação a página ou ao seus ancestrais.
+>
+>https://www.youtube.com/watch?v=wmAP2xvNs08 - parte 1
+>
+>https://www.youtube.com/watch?v=RdlEEfx912M - parte 2
 ```
 style {
     div{
-        position: relative; - tornará esse elemento um referencial para seus decententes se posicionarem.
-        
-        position: absolute; - configura sua posição ao elemento com a propriedade relative mais recente a qual ele é descendente, para de fazer parte do fluxo de posicionamento desse container.
+        position static; - valor padrão de comportamento na lógica do CSS.
 
-        position: fized - se torna fixo a posição configurada no container.
+        position: relative; - tornará esse elemento relativo a sua posição padrão e um container pai para elementos dentro dele.
+        
+        position: absolute; - Relaciona sua posição ao elemento pai ou ao container que pertence.
+
+        position: fixed; - se torna fixo a posição configurada no elemento pai ou container.
+
+        position: sticky; - mantêm a posição entregue enquant na viewport, age como fixado quando mudasse a visão do site.
     }
 }
 ```
 
+![Explicação visual do conceito position](/imgs/models/position.png)
+
 # Grid em CSS
 > O CSS Grid Layout é um sistema de layout bidimensional que permite criar designs complexos de forma mais simples e intuitiva. Ele oferece um controle preciso sobre a posição dos elementos dentro de um contêiner de grid. Aqui estão os conceitos e propriedades principais para entender o CSS Grid:
+>
+>https://www.youtube.com/watch?v=RSIclWvNTdQ
 
 **Conceitos Básicos :**
 * **Grid Container**: O elemento que tem display: grid aplicado a ele. Este contêiner define um contexto de grid para seus elementos filhos.
@@ -343,3 +357,6 @@ style {
 * **grid-row:** Define a posição e o tamanho da linha para o item. Pode ser especificado como grid-row-start e grid-row-end.
 
 * **grid-area:** Permite que o item ocupe uma área nomeada definida pelo grid-template-areas.
+
+# Responsividade
+
