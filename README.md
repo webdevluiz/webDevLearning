@@ -360,3 +360,10 @@ style {
 
 # Responsividade
 
+ Unidades responsivas:
+![comparação entre medidas](/imgs/models/pixels_rem_em.png)
+
+ Mobile 1°
+![Exemplificação para MOBILE FIRST](/imgs/models/mobile_1_vertical.png)
+
+ Media query
