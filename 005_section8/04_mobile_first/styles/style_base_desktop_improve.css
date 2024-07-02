@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media (min-width: 40rem) {
+
+/* Necessário ser expecífico para garantir que o menu retrátil não apareça */
+    #retratil:target {
+        display: none;
+    }
+    .compacto span {
+        display: none;
+    }
+    
+/* Garante que os links sejam vistos em telas grandes */
+    header > nav > div{
+        display: block;
+    }
+    
+/* Estilização dos links em telas grandes */
+    header > nav > div > a {
+        font-weight: 800;
+        padding:  0.25rem;
+        margin: 0 0.75rem 0 0;
+        border-radius: 12px;
+
+        color: rgb(45, 44, 43);
+        background-color:rgb(230, 221, 211);
+    }
+    header > nav > div > a:hover {
+        padding: 0.19rem;
+        border: 1px solid rgb(230, 221, 211);
+        
+        color: rgb(230, 221, 211);
+        background-color: rgb(45, 44, 43);
+    }
+
+/* Garante que as infos resumidas não sejam mostradas em tela pequena */
+    #resumo-infos {
+        display: none;
+    }
+    
+/* Gerencia a forma como as infos completas são mostradas em tela grande */
+    #infos {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #infos img {
+        height: 3.4rem;
+        width: 3.4rem;
+    }
+}
