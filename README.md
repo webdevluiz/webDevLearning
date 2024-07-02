@@ -360,10 +360,16 @@ style {
 
 # Responsividade
 
- Unidades responsivas:
+ Unidades responsivas :
+
 ![comparação entre medidas](/imgs/models/pixels_rem_em.png)
 
- Mobile 1°
+ Mobile 1° :
+
 ![Exemplificação para MOBILE FIRST](/imgs/models/mobile_1_vertical.png)
 
- Media query
+ Media query :
+ * Uma consulta de mídia (media query) é um recurso do CSS utilizado para aplicar estilos a conteúdos web com base nas características do dispositivo que está renderizando o conteúdo, como o tamanho da tela, resolução, orientação e outros.
+
+ * As consultas de mídia permitem o design responsivo, adaptando a aparência e o layout de sites a diferentes dispositivos e tamanhos de tela.
+ ![demonstração visual de media queries](/imgs/models/media_queries.png)

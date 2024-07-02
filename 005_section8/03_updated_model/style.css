@@ -16,7 +16,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(29, 26, 24);
-  padding: 0 5%;
+  padding: 0 1rem;
 }
 
 #logo {
@@ -27,14 +27,22 @@ a {
 }
 
 #main-header ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-btn span{
+    display: none;
+}
+
+#side-drawer {
+    display: none;
 }
 
 #main-header li {
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
 }
 
 #main-header nav a {
