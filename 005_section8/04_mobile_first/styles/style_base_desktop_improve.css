@@ -51,4 +51,42 @@
         height: 3.4rem;
         width: 3.4rem;
     }
+
+/* Gerencia o aspecto de lista da main, alem de mostrar os elementos em grupos */
+main ul {
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Gerencia o tamanho e estilo de cada item da lista */
+    main li {
+        width: 24rem;
+        height: 32rem;
+        margin: 4rem 0;
+        border-radius: 1rem;
+        /* border: 2px solid black; */
+        box-shadow: 2px 2px 1rem black;
+
+/* garante que o conteúdo dentro dos elementos da lista obedecerão o tamanho do mesmo */
+        overflow: hidden;
+
+/* Entrega a visibilida que a tela grande terá da lista */
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+/* Gerencia o tamanho das imagens de cada item de lista da main em tela grande */
+    main img {
+        width: 24rem;
+        height: 20rem;
+    }
 }

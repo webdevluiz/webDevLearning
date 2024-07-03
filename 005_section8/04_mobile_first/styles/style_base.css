@@ -128,7 +128,8 @@
         display: none;
     }
 
-    #grelha ul {
+/* Gerencia o aspecto de lista da main, alem de mostrar os elementos em coluna */
+    main ul {
         padding: 0;
         list-style: none;
 
@@ -139,28 +140,49 @@
         align-items: center;
     }
 
-    #grelha ul li {
-        width: 26rem;
-        height: 10rem;
-        margin: 4rem 0;
+/* Gerencia o tamanho e estilo de cada item da lista */
+    main li {
+        width: 30rem;
+        height: 18rem;
+        margin: 2rem;
         border-radius: 1rem;
         /* border: 2px solid black; */
         box-shadow: 2px 2px 1rem black;
 
+    /* garante que o conteúdo dentro dos elementos da lista obedecerão o tamanho do mesmo */
         overflow: hidden;
 
+    /* Entrega a visibilida que a tela pequena terá da lista */
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
-    #grelha ul li img {
-        height: 10rem;
-        width: 10rem;
+/* Gerencia o tamanho das imagens de cada item de lista da main em tela pequena */
+    main img {
+        width: 18rem;
+        height: 20rem;
     }
 
+/* Gerencia o tamanho do artigo de cada item de lista da main */
+    main article {
+        width: 100%;
+        height: 100%;
+        padding: .5rem;
+    }
+
+    main article p {
+        padding: 1rem;
+    }
+
+/* Centraliza o titulo do conteúdo */
+    main h2 {
+        text-align: center;
+    }
+
+/* Gerencia o estilo da barra de rodapé */
     footer {
         width: 100%;
         height: 2.4rem;
@@ -173,19 +195,21 @@
         justify-content: space-between;
     }
 
+/* Estiliza o paragrafo de assinatura */
     footer p {
         font-size: .7rem;
         color: white;
         padding: 0 0 0 .3rem;
     }
 
+/* Estiliza o link de criador */
     footer a {
         font-weight: 700;
         text-decoration: none;
         color: rgb(230, 221, 211);
     }
 
-
+/* Gerencia o tamanho das imagens ancoras de rede sociais do criador */
     footer img {
         height: 2rem;
         width: 2rem;
