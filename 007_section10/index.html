@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imgs/logos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="index.html" method="get">
+        <div id="type-text">
+            <label for="text-form">Testar retorno</label>
+            <input type="text" name="text-form" id="text-form">
+        </div>
+        <button>enviar</button>
+    </form>
+    <form action="index.html">
+        <div id="type-email">
+            <label for="email-form">Testar E-mail</label>
+            <input type="text" name="email-form" id="email-form">
+        </div>
+        <button>log in</button>
+    </form>
+    <form action="index.html">
+        <div id="type-number">
+            <label for="number-form">insira números</label>
+            <input type="number" step="2" name="number-form" id="number-form" min="0" max="12">
+        </div>
+        <button>inserir</button>
+    </form>
+    <form action="index.html">
+        <div id="type-password">
+            <label for="pass-form">Teste sua senha</label>
+            <input type="password" name="pass-form" id="pass-form">
+        </div>
+        <button>*****</button>
+    </form>
+    <form action="index.html">
+        <div id="type-date">
+            <label for="date-form">Teste uma data</label>
+            <input type="date" name="date-form" id="date-form" style="text-align: center;">
+        </div>
+        <button>enviar data</button>
+    </form>
+    <form action="index.html">
+        <div id="type-radio">
+            <label for="ratio-form">Teste qual será escolhido</label>
+            <ul>
+                <li><input type="radio" name="ratio-form" id="ratio-form-1" value="0"></li>
+                <li><input type="radio" name="ratio-form" id="ratio-form-2" value="1"></li>
+                <li><input type="radio" name="ratio-form" id="ratio-form-3" value="2"></li>
+                <li><input type="radio" name="ratio-form" id="ratio-form-4" value="3"></li>
+            </ul>
+        </div>
+        <button>enviar escolha</button>
+    </form>
+    <form action="index.html">
+        <div id="type-checkbox">
+            <label for="checkbox-form">Teste dos que serão assinados</label>
+            <ul>
+                <li><input type="checkbox" name="checkbox-form" id="checkbox-form-1" value="0">escolha 1</li>
+                <li><input type="checkbox" name="checkbox-form" id="checkbox-form-2" value="1">escolha 2</li>
+                <li><input type="checkbox" name="checkbox-form" id="checkbox-form-3" value="2">escolha 3</li>
+            </ul>
+        </div>
+        <button>escolher um</button>
+    </form>
+</body>
+</html>
