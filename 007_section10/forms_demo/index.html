@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <h1>DEMO FORM</h1>
+    <main>
+        <form action="index.html"> <!--novalidate, desabilita a validação padrão do forms-->
+            <section>
+                <label for="name">Digite seu nome</label>
+                <input type="text" name="user-name" id="name" required placeholder="Nome e sobrenome">
+            </section>
+
+            <section>
+                <label for="email">Digite seu e-mail</label>
+                <input type="email" name="user-email" id="email" required>
+            </section>
+            
+            <section>
+                <label for="phone">Digite seu numero</label>
+                <input type="text" name="phone-number" id="phone" required>
+            </section>
+
+            <section>
+                <label for="password">Digite sua senha</label>
+                <input type="password" name="user-password" id="password" required minlength="12">
+            </section>
+
+            <section>
+                <label for="age">Digite sua idade</label>
+                <input type="number" name="user-age" id="age" step="1" min="0" max="105" required>
+            </section>
+
+            <section>
+                <label for="birthdate">Escolha sua data de nascimento</label>
+                <input type="date" name="user-birthdate" id="birthdate" min="1920-01-01">
+            </section>
+
+            <section>
+                <label for="color">Qual cor gostariade receber seu uniforme?</label>
+                <select name="user-color" id="color" required>
+                    <option value="none">Escolha sua cor</option>
+                    <option value="red">Vermelho</option>
+                    <option value="green">Verde</option>
+                    <option value="blue">Azul</option>
+                </select>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Como gostaria de autenticar sua conta?</h2>
+                    <ul>
+                        <li class="multiplas_opcoes">
+                            <input type="radio" name="auth" value="call" id="auth-call" required>
+                                <label for="auth-call">Verificar via Ligação</label>
+                        </li>
+                        
+                        <li class="multiplas_opcoes">
+                            <input type="radio" name="auth" value="email" id="auth-email" required>
+                               <label for="auth-email">Verificar via e-mail</label>
+                        </li>
+
+                        <li class="multiplas_opcoes">
+                            <input type="radio" name="auth" value="sms" id="auth-sms" required>
+                                <label for="auth-sms">Verificar via SMS</label>
+                        </li>
+                    </ul>
+            </section>
+            <hr>
+
+            <section>
+                <h2>Mais alguns passos antes de terminar o form</h2>
+                <ul>
+                    <li class="multiplas_opcoes">
+                        <input type="checkbox" name="agree-terms" id="terms">
+                        <label for="terms">Concorda com os termos? (obrigatório)</label>
+                    </li>
+
+                    <li class="multiplas_opcoes">
+                        <input type="checkbox" name="contact-form" id="contact" value="phone">
+                        <label for="contact">Receber atualizações via celular?</label>
+                    </li>
+                    
+                    <li class="multiplas_opcoes">
+                        <input type="checkbox" name="contact-form" id="contact" value="email">
+                        <label for="contact">Receber atualizações via email?</label>
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section>
+                <label for="sugest">Gostaria de deixar alguma sugestão?</label>
+                <textarea name="user-sugestions" id="sugest" rows="4">ficaremos felizes de receber seu pointo de vista</textarea>
+            </section>
+
+            <br>
+
+            <div id="btns">
+                <button>Enviar</button>
+                <button type="reset" id="reset">limpar formulário</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

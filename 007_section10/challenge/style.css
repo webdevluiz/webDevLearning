@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo-principal);
+
+
+
+    --cor-fundo-principal: rgb(210, 230, 240) ;
+    --cor-principal: rgb(250, 250, 250);
+    --cor-sombra-principal: rgb(168, 162, 162);
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 42rem;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    background-color:  var(--cor-principal);
+    box-shadow: 1px 1px 8px var(--cor-sombra-principal);
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+#name_space, #email_space, #phone_space, #textarea_space, #findus_space {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+label {
+    margin: .7rem 0;
+}
+
+input, textarea, select {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+input, select {
+    height: 1.6rem;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.choices input, .choices label{
+    width: auto;
+    margin: 0;
+    padding: .5rem;
+}
+
+#btn_space {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: .4rem;
+    color: white;
+    background-color: rgb(1, 12, 10);
+}
+
+button:hover {
+    background-color: rgb(30, 50, 50);
+}
+
+#clear {
+    color: rgb(1, 12, 10);
+    background-color: white;
+}
+
+#clear:hover {
+    background-color: rgb(180, 180, 180);
+}

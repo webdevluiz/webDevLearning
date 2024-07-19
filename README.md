@@ -68,7 +68,12 @@ My personal essay on front-end learning journey through HTML, CSS, javascrypt an
 
 # Forms em sua página
 
+* forms são a maneira de enviar e receber dados do usuário quando existe a interação na página.
 
+**Tipos comuns de forms**
+- form: Define o espaço que terão os elementos a serem coletados e enviados juntos, além do alvo a receber ou retornar a ação e o metodo que será aplicado nessa ação.
+- input: o tipo mais comum, recebe diversos tipos, que definem sua entrada, name="" que define como será reconhecido no envio do form e id, que liga ele a estilização da página e a etiqueta que o caracteriza ao usuário.
+- button: marca o envio ou pedido de uma ação.
 
 # CSS - Cascading Style Sheets
 

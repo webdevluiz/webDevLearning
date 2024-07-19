@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(31, 31, 31);
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+main {
+    width: 800px;
+    padding: 2rem;
+    margin: 30px auto;
+    border-radius: .4rem;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: white;
+}
+
+section {
+    width: 100%;
+    text-align: start;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    font: inherit;
+}
+
+input {
+    height: 1.4rem;
+    margin: .4rem 0;
+    font: inherit;
+
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.multiplas_opcoes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+textarea {
+    font: inherit;
+    font-size: .8rem;
+    font-weight: 500;
+
+    resize: none;
+    /* resize: horizontal; */
+    /* resize: vertical; */
+}
+
+button {
+    min-width: 5rem;
+    height: 2rem;
+    color: white;
+    border-radius: .5rem;
+    border: 2px solid rgb(4, 4, 34);
+    background-color: rgb(4, 4, 34);
+}
+
+button:hover {
+    color: rgb(4, 4, 34);
+    background-color: white;
+    border: 2px solid rgb(4, 4, 34);
+}
+
+#reset {
+    background-color: brown
+}
+
+#btns {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

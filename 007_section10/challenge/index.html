@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imgs/logos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <main>
+        <h2>How can we help you?</h2>        
+        <form action="index.html">
+            <section id="name_space">
+                <label for="name">Your Name</label>
+                <input type="text" name="user_name" id="name" required placeholder="Nome completo">
+            </section>
+
+            <section id="email_space">
+                <label for="email">Your E-Mail Address</label>
+                <input type="email" name="user_email" id="email" required placeholder="address@email.com">
+            </section>
+
+            <section id="phone_space">
+                <label for="phone">Your Phone Number</label>
+                <input type="number" name="user_phone" id="phone" required placeholder="+55 062 98765-4321" minlength="9" maxlength="13" min="981000000">
+            </section>
+
+            <section id="textarea_space">
+                <label for="textarea">Your message</label>
+                <textarea name="user_comment" id="textarea" rows="10"></textarea>
+            </section>
+
+            <section id="findus_space">
+                <label for="findus">How did you find us?</label>
+                <select name="find_us" id="findus">
+                    <option value="sem_retorno">não selecionado</option>
+                    <option value="web">Web Search</option>
+                    <option value="social">social midias</option>
+                    <option>indication</option>
+                </select>
+            </section>
+
+            <h2>How should we reply?</h2>
+
+            <section id="choice_space">
+                <div class="choices">
+                    <input type="radio" name="user_reply" id="reply_call" value="call" required>
+                    <label for="reply_call">Call me</label>
+                </div>
+
+                <div class="choices">
+                    <input type="radio" name="user_reply" id="reply_email" value="email" required>
+                    <label for="reply_email">Send me a email</label>
+                </div>
+
+                <div class="choices">
+                    <input type="radio" name="user_reply" id="reply_no" value="no" checked required>
+                    <label for="reply_no">Don't contact me, i will check</label>
+                </div>
+            </section>
+
+            <section id="term_space" class="choices">
+                <input type="checkbox" name="agree_terms" id="terms" required>
+                <label for="terms">Accept Terms</label>
+            </section>
+
+            <section id="btn_space">
+                <div id="btn">
+                    <button type="reset" id="clear">Clear</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
