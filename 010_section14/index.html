@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/imgs/logos/favicon.ico" type="image/x-icon">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/imgs/logos/jogo_da_velha_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css">
     <title>Jogo da velha</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo da velha</h1>
+      <p>
+        <a
+          href="https://github.com/webdevluiz/webDevLearning/tree/main/010_section14"
+          >Construido</a
+        >
+        por
+        <a href="https://github.com/webdevluiz">Luiz felipe pires carvalho</a>
+        pelas tecnologias HTML5, CSS3 e javascript
+      </p>
+    </header>
+
+    <main>
+        <div id="jogadores">
+            <section id="jogador1" class="jogador">
+                    <p>Jogador 1</p>
+                    <a href="#">Jogador 1</a>
+                    <button id="editarJogador1">Editar</button>
+            </section>
+
+            <section id="jogador2" class="jogador">
+                    <label for="entradaNome">Jogador 2</label>
+                    <input type="text" minlength="3" placeholder="jogador 2">
+                    <button id="editarJogador2">Editar</button>
+            </section>
+        </div>
+
+        <input type="button" value="Iniciar novo Jogo">
+    </main>
+  </body>
 </html>
