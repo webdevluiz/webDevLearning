@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/imgs/logos/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="js.js" defer></script> -->
+     <script src="calculator.js" defer></script>
+     <script src="highlight.js" defer></script>
+     <script src="userData.js" defer></script>
+     <script src="diceRows.js" defer></script>
+    <title>List of loops</title>
+  </head>
+  <body>
+    <h1>Loops em ação</h1>
+    <section id="calculator">
+      <h2>Calculadora javascript</h2>
+      <p>
+        Determine a soma de todos os numeros inteiros menores que sua entrada e
+        maiores que zero, insira um valor positivo menor que 1000.
+      </p>
+      <form>
+          <label for="sum">Seu numero</label>
+          <div class="area">
+          <input type="number" name="sumDec" id="sum" class="entry" min="0" max="999"/>
+          <p id="resultSum"></p>
+        </div>
+        <input
+          type="button"
+          value="Calcular soma"
+          id="calculating"
+          class="btn"
+        />
+      </form>
+    </section>
+
+    <section id="highlight">
+      <h2>Dando foco a links</h2>
+      <input
+        type="button"
+        value="Mostre todos os links desse texto"
+        id="highlighting"
+        class="btn"
+      />
+      <p>
+        Lorem ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit.
+        Eius iusto, qui, aliquam excepturi, aspernatur asperiores magnam
+        mollitia repudiandae laudantium reiciendis debitis minima quas itaque
+        velit eum dolorem in ipsum doloremque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <a href="#">Quaerat</a>, aliquam consequuntur quibusdam architecto esse
+        possimus eius aut ipsum ab blanditiis dolore consectetur beatae alias
+        excepturi soluta non cupiditate quam omnis.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam culpa
+        delectus facere esse? Aspernatur delectus sint molestiae. Minus non
+        cumque recusandae dolores, harum fugit rerum aliquam. Aliquid molestiae
+        libero <a href="#">quos</a>?
+      </p>
+    </section>
+
+    <section id="userData">
+      <div>
+          <h2>Suas informações</h2>
+          <input
+            type="button"
+            value="Mostrar dados do usuário"
+            id="data"
+            class="btn"
+          />
+      </div>
+      <ul>
+      </ul>
+    </section>
+
+    <section id="statistics">
+      <h2>Estatística</h2>
+      <p>
+        Teste quantas tentativas demomariam para retirar um numero especifico entre 1 e 6 no
+        dado
+      </p>
+      <label for="dice">Número Alvo</label>
+      <div class="area">
+        <input type="number" name="numberTarget" id="target" class="entry" min="1" max="6">
+    </div>
+    <input type="button" value="Role o dado" id="dice" class="btn" />
+    <ul id="listOfRows"></ul>
+      <p id="resultDice">
+        Levou
+        <span id="steps">X</span>
+        roladas para coseguir um
+        <span id="targetDice">Y</span>
+      </p>
+    </section>
+  </body>
+</html>
